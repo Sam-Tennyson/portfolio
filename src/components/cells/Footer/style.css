@@ -1,0 +1,27 @@
+.footer {
+    padding: 2rem 9%;
+    background: var(--secondary-bg-color);
+}
+
+.footer-text  p {
+    font-size: 1.6rem;
+}
+
+.footer-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    border: 0.8rem;
+    background: var(--main-color);
+    transition: 0.5s ease;
+}
+
+.footer-icons a:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-icons a i{
+    font-size: 2.4rem;
+    color: var(--secondary-bg-color);
+}
