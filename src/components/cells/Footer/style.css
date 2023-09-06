@@ -5,7 +5,7 @@
 
 .footer-text  p {
     font-size: 1.6rem;
-    color: var(--white-color);
+    color: var(--main-color);
 }
 
 .footer-icons a{
@@ -14,13 +14,9 @@
     align-items: center;
     padding: 0.8rem;
     border: 0.8rem;
-    background: var(--main-light-1);
+    background: var(--main-color);
     transition: 0.5s ease;
     border-radius: 50%;
-}
-
-.footer-icons a:hover{
-    background: var(--main-dark-1);
 }
 
 .footer-icons a i{

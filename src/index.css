@@ -33,15 +33,19 @@
 	--white-color: #fff;
 	--black-color: #000;
 	--text-color-section: #000;
-	--text-color: #000;
 
-	--main-color: rgb(188, 10, 10);
+
+
 	--main-light-1: rgb(180, 85, 85);
 	--main-light-2: rgb(224, 169, 169);
 	--main-dark-1: rgb(116, 7, 7);
 	
-	--primary-bg-color: #fff;
-	--secondary-bg-color: rgb(188, 10, 10);
+
+
+	--primary-bg-color: rgb(233, 206, 102);
+	--secondary-bg-color: rgb(223, 182, 48);
+	--text-color: #050505;
+	--main-color: rgb(71, 58, 6);
 }
 
 ::-webkit-scrollbar {
@@ -71,7 +75,7 @@ body {
 
 .form-control {
 	color: var(--text-color);
-	background: var(--grey-color);
+	background: var(--primary-bg-color);
 	border: none;
 	display: block;
 	width: 100%;
@@ -89,7 +93,7 @@ body {
 		box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, 0.3);
 		outline: 0;
 		color: var(--text-color);
-		background: var(--grey-color);
+		background: var(--primary-bg-color);
 	}
 }
 

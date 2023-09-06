@@ -7,7 +7,7 @@ const TAB_DATA = [
         label: "Home", id: "#home", icon: <i className='bx bxs-home'></i>
     },
     {
-        label: "About", id: "#about", icon: <i className='bx bxs-user-detail'></i>
+        label: "About", id: "#about", icon: <i class='bx bxs-user'></i>
     },
     // {
     //     label: "Services", id: "#services", icon: <i className='bx bx-cog'></i>
@@ -67,9 +67,14 @@ const Header = () => {
                     {TAB_DATA.map((item) => (
                         <a href={item?.id} key={item?.id}
                             onClick={handleToggle}
+
                         >
+                            <i className="d-flex justify-content-center align-items-center">
+
                             {item?.icon} &nbsp;
-                            {item?.label}</a>
+                            {item?.label}
+                            </i>
+                        </a>
                     ))}
                 </nav>
             </header>

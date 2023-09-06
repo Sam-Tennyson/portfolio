@@ -1,6 +1,6 @@
 
 .about {
-    background: var(--main-light-2);
+    background: var(--secondary-bg-color);
     color: var(--white-color);
 }
 
@@ -25,6 +25,6 @@
 }
 
 .about-content h2 span {
-    color: var(--main-dark-1);
+    color: var(--main-color);
 }
 

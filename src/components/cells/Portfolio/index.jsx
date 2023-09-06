@@ -23,14 +23,15 @@ const DATA = [
 	{
 		id: "3",
 		image_data: IMAGES.profChat,
-		heading: "Professional Chat",
-		desc: "Professional Chat project, a powerful communication platform designed to connect users in a seamless and efficient manner. Built with Firebase and React, this project offers secure user authentication, real-time messaging capabilities, and easy profile management."
+		heading: "Gossip Chat",
+		desc: `"Gossip Chat project", a powerful communication platform designed to connect users in a seamless and efficient manner. Built with Firebase and React, this project offers secure user authentication, real-time messaging capabilities, and easy profile management.`,
+		live_link: "https://inspiring-crepe-f750fc.netlify.app/"
 	}, 
 	{
 		id: "4",
 		image_data: IMAGES.arcade,
 		heading: "Arcade Challange",
-		desc: "Professional Chat project, a powerful communication platform designed to connect users in a seamless and efficient manner. Built with Firebase and React, this project offers secure user authentication, real-time messaging capabilities, and easy profile management.",
+		desc: `"Paddle Bounce" , is a super fun game made with JavaScript. You control paddles on both sides of the screen to keep a ball bouncing. Your job is to stop the ball from falling down and earn points when it bounces.`,
 		live_link: "https://sam-tennyson.github.io/ArcadeGame_javascript/"	
 	}, 
 ]

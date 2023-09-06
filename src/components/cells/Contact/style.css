@@ -1,3 +1,7 @@
+.contact {
+    background: var(--secondary-bg-color);
+}
+
 .contact h2 {
     margin-bottom: 3rem;
 }
