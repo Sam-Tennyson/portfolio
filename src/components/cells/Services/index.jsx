@@ -5,17 +5,17 @@ import ScrollReveal from 'scrollreveal';
 const DATA = [
 	{
 		id: "1",
-		heading: "Web Developer",
-		desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad magnam suscipit recusandae, libero maiores provident?"
+		heading: "HTML / CSS / Javascript",
+		desc: "HTML (Hypertext Markup Language) is the fundamental structure of web content, employing tags to define elements like text, images, and links. CSS (Cascading Style Sheets) complements HTML, controlling layout and aesthetics, defining fonts, colors, and responsive design. JavaScript, on the other hand, is a dynamic programming language for web browsers, adding interactivity by enabling real-time updates, form validation, and animations, thereby enhancing user experiences on websites and web applications."
 	},
 	{
 		id: "2",
-		heading: "Web Developer",
+		heading: "React Js",
 		desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad magnam suscipit recusandae, libero maiores provident?"
 	},
 	{
 		id: "3",
-		heading: "Web Developer",
+		heading: "Firebase",
 		desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad magnam suscipit recusandae, libero maiores provident?"
 	}
 ]
@@ -49,7 +49,7 @@ const Services = () => {
 					<div className="row">
 
 					{DATA.map((item) => (
-						<div className="col-md-4 col-sm-6 p-3 " key={item?.id}>
+						<div className="col-md-4 col-sm-6 p-3 h-100" key={item?.id}>
 							<div className="services-box" >
 								<i className="bx bx-code-alt"></i>
 								<h3>{item?.heading}</h3>

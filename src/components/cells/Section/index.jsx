@@ -4,6 +4,12 @@ import { IMAGES } from '../../../shared/Images'
 import ScrollReveal from 'scrollreveal';
 import Typed from 'typed.js';
 
+const SOCIAL_LINKS = {
+    GITHUB: "https://github.com/Sam-Tennyson",
+    LINKED_IN: "https://linkedin.com/in/saurabh-shukla-457821196",
+    FACEBOOK: "https://www.facebook.com/people/Saurabh-Shukla/pfbid02iywkBrnX9naGztkNYTQ9H5gQFLRmThR9ncW4pjEcmzjeBur18G5dZnoZoyGNsxUDl/",
+    INSTAGRAM: "",
+}
 
 const Section = () => {
 
@@ -62,12 +68,12 @@ const Section = () => {
                 <h1>Saurabh Shukla</h1>
                 <h3>And I'm a <span className='typed-text'></span>
                 </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptas ad sequi sint porro possimus nisi velit, repudiandae expedita explicabo?</p>
+                <p>With a strong foundation in HTML, CSS, and JavaScript, I have a proven track record of bringing creative ideas to life and turning them into interactive, responsive, and visually stunning websites and web applications.</p>
                 <div className="social-media">
-                    <a href="#"><i className='bx bxl-github'></i></a>
-                    <a href="#"><i className='bx bxl-linkedin'></i></a>
-                    <a href="#"><i className='bx bxl-instagram-alt'></i></a>
-                    <a href="#"><i className='bx bxl-facebook'></i></a>
+                    <a href={SOCIAL_LINKS.GITHUB} ><i className='bx bxl-github'></i></a>
+                    <a href={SOCIAL_LINKS.LINKED_IN}><i className='bx bxl-linkedin'></i></a>
+                    <a href={SOCIAL_LINKS.INSTAGRAM}><i className='bx bxl-instagram-alt'></i></a>
+                    <a href={SOCIAL_LINKS.FACEBOOK}><i className='bx bxl-facebook'></i></a>
                 </div>
             </div>
             <div className="profile-image">

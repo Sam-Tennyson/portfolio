@@ -3,43 +3,26 @@ import "./style.css"
 import { IMAGES } from '../../../shared/Images'
 import ScrollReveal from 'scrollreveal'
 
+
 const DATA = [
 	{
 		id: "1",
 		image_data: IMAGES.portFolio_1,
-		heading: "Web Design",
-		desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad magnam suscipit recusandae, libero maiores provident?"
+		heading: "Portfolio Website",
+		desc: "Designed and developed my personal portfolio website from scratch, showcasing my skills and projects. Ensured it's responsive and SEO-friendly."
 	},
 	{
 		id: "2",
 		image_data: IMAGES.portFolio_2,
-		heading: "Web Design",
-		desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad magnam suscipit recusandae, libero maiores provident?"
+		heading: "Movie Browser",
+		desc: "This project is a result of my passion for movies and web development. I've harnessed the power of The Movie Database (TMDb) API to create a dynamic and user-friendly platform for exploring movies, TV shows, and more."
 	},
 	{
 		id: "3",
 		image_data: IMAGES.portFolio_3,
-		heading: "Web Design",
-		desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad magnam suscipit recusandae, libero maiores provident?"
-	},
-	{
-		id: "4",
-		image_data: IMAGES.portFolio_1,
-		heading: "Web Design",
-		desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad magnam suscipit recusandae, libero maiores provident?"
-	},
-	{
-		id: "5",
-		image_data: IMAGES.portFolio_2,
-		heading: "Web Design",
-		desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad magnam suscipit recusandae, libero maiores provident?"
-	},
-	{
-		id: "6",
-		image_data: IMAGES.portFolio_3,
-		heading: "Web Design",
-		desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad magnam suscipit recusandae, libero maiores provident?"
-	}
+		heading: "Professional Chat",
+		desc: "Professional Chat project, a powerful communication platform designed to connect users in a seamless and efficient manner. Built with Firebase and React, this project offers secure user authentication, real-time messaging capabilities, and easy profile management."
+	}, 
 ]
 
 const Portfolio = () => {

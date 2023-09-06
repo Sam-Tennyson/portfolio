@@ -1,3 +1,7 @@
+.services h2 span {
+    color: var(--main-color)
+}
+
 .services-content h3 {
     font-size: 2.6rem;
     font-weight: 700;
@@ -15,15 +19,16 @@
 .services-content .services-box {
     flex: 1 1 30rem;
     border-radius: 2rem;
-    background: var(--secondary-bg-color);
+    background: var(--main-light-1);
     padding: 3rem 2rem 4rem;
     text-align: center;
     border: 0.5rem solid var(--primary-bg-color);
     transition: 0.5s ease;
+    border-color: var(--main-color);
 }
 
 .services-content .services-box:hover {
-    border-color: var(--main-color);
+    border: 0;
     transform: scale(1.02);
 }
 

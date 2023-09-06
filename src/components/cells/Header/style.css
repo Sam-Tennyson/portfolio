@@ -10,13 +10,13 @@
 
 #hamburger-icon {
     font-size: 3.6rem;
-    color: var(--text-color);
+    color: var(--white-color);
     display: none;
 }
 
 .my-logo {
     font-size: 2.5rem;
-    color: var(--text-color);
+    color: var(--white-color);
     font-weight: 600;
     cursor: default;
 }
@@ -24,7 +24,7 @@
 .my-nav a {
     margin: 0 2rem;
     font-size: 1.7rem;
-    color: var(--text-color);
+    color: var(--white-color);
     transition: 0.5s;
 }
 
@@ -35,7 +35,7 @@
 
 .my-nav .active-section {
     transition: width 0.2s ease; 
-    color: var(--text-color);
-    border-bottom: 2px solid black;
+    color: var(--white-color);
+    border-bottom: 2px solid var(--white-color);
 }
 

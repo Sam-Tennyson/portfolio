@@ -4,19 +4,19 @@ import { RESPONSIVE } from '../../../shared/Constants'
 
 const TAB_DATA = [
     {
-        label: "Home", id: "#home"
+        label: "Home", id: "#home", icon: <i className='bx bxs-home'></i>
     },
     {
-        label: "About", id: "#about"
+        label: "About", id: "#about", icon: <i className='bx bxs-user-detail'></i>
     },
     {
-        label: "Services", id: "#services"
+        label: "Services", id: "#services", icon: <i className='bx bx-cog'></i>
     },
     {
-        label: "Projects", id: "#portfolio"
+        label: "Projects", id: "#portfolio", icon: <i className='bx bx-detail'></i>
     },
     {
-        label: "Contact", id: "#contact"
+        label: "Contact", id: "#contact", icon: <i className='bx bx-current-location'></i>
     },
 ]
 
@@ -67,7 +67,9 @@ const Header = () => {
                     {TAB_DATA.map((item) => (
                         <a href={item?.id} key={item?.id}
                             onClick={handleToggle}
-                        >{item?.label}</a>
+                        >
+                            {item?.icon} &nbsp;
+                            {item?.label}</a>
                     ))}
                 </nav>
             </header>
