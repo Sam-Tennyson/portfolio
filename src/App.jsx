@@ -45,7 +45,7 @@ function App() {
 			<Header />
 			<Section />
 			<About />
-			<Services />
+			{/* <Services /> */}
 			<Portfolio />
 			<Contact />
 			<Footer />

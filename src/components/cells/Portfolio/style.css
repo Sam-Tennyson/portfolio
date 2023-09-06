@@ -14,28 +14,42 @@
 
 }
 
-
 .portfolio-container {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
 
 .portfolio-container .portfolio-box {
-    position: relative;
-    background: var(--secondary-bg-color);
+    /* padding: 2rem; */
+    color: var(--white-color);
+    background: var(--main-color);
     border-radius: 2rem;
-    border: 0 0 1rem var(--main-color);
+    border: 0.5rem solid var(--main-dark-1);
     overflow: hidden;
-    display: flex;
     transition: 0.5s ease;
 }
 
+.portfolio-container .portfolio-box h4 {
+    font-size: 2rem;
+}
+
+.portfolio-container .portfolio-box p {
+    color: var(--grey-color);
+    font-size: 1.5rem;
+}
+
 .portfolio-container .portfolio-box:hover {
-    border-color: var(--main-color);
+    /* border-color: var(--main-color); */
     transform: scale(1.02);
 }
 
-.portfolio-box .portfolio-layer {
+.portfolio-container .portfolio-box img {
+    width: 100%;
+    /* object-fit: cover; */
+    height: 50%;
+}
+
+/* .portfolio-box .portfolio-layer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -48,5 +62,5 @@
 .portfolio-box img {
     width: 100%;
     object-fit: cover;
-}
+} */
 

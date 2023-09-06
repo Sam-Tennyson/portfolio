@@ -9,9 +9,9 @@ const TAB_DATA = [
     {
         label: "About", id: "#about", icon: <i className='bx bxs-user-detail'></i>
     },
-    {
-        label: "Services", id: "#services", icon: <i className='bx bx-cog'></i>
-    },
+    // {
+    //     label: "Services", id: "#services", icon: <i className='bx bx-cog'></i>
+    // },
     {
         label: "Projects", id: "#portfolio", icon: <i className='bx bx-detail'></i>
     },
