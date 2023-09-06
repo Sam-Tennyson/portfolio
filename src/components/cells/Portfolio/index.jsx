@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import "./style.css"
 import { IMAGES } from '../../../shared/Images'
+import ScrollReveal from 'scrollreveal'
 
 const DATA = [
 	{
@@ -42,10 +43,30 @@ const DATA = [
 ]
 
 const Portfolio = () => {
+	const isMountRef = useRef(true);
+	useEffect(() =>{
+        if (isMountRef.current) {
+            ScrollReveal().reveal('.heading', {
+                reset: true,
+                origin: 'top',   // Animation origin (e.g., 'top', 'bottom', 'left', 'right')
+                distance: '80px', // Distance from the origin
+                duration: 1000,   // Animation duration in milliseconds
+                delay: 200,       // Delay before animation starts in milliseconds
+            });
+
+			ScrollReveal().reveal('.portfolio-container', {
+                reset: true,
+                origin: 'bottom',   // Animation origin (e.g., 'top', 'bottom', 'left', 'right')
+                distance: '80px', // Distance from the origin
+                duration: 1000,   // Animation duration in milliseconds
+                delay: 200,       // Delay before animation starts in milliseconds
+            });
+        }
+    }, [])
 	return (
 		<>
 			<section className='portfolio' id="portfolio">
-				<h2 className='heading'> Latest <span>Project</span></h2>
+				<h2 className='heading'> Latest <span>Projects</span></h2>
 				<div className="portfolio-container d-flex justify-content-center align-items-center gap-2 flex-wrap">
 					<div className="row">
 						{DATA.map((item)=> (

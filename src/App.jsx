@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { motion } from "framer-motion";
+import { useEffect, useRef } from 'react'
 import './App.css'
 import Header from './components/cells/Header';
 import Section from './components/cells/Section';
@@ -10,17 +9,36 @@ import Contact from './components/cells/Contact';
 import Footer from './components/cells/Footer';
 
 function App() {
-	const items = ["Item 1", "Item 2", "Item 3"]; // Replace with your data
-	const icon = {
-		hidden: {
-			pathLength: 0,
-			fill: "rgba(255, 255, 255, 0)"
-		},
-		visible: {
-			pathLength: 1,
-			fill: "rgba(255, 255, 255, 1)"
-		}
-	}
+	
+	const handleScrollActiveDiv = () => {
+        let sections = document.querySelectorAll("section");
+        let navlinks = document.querySelectorAll(".header nav a");
+
+		console.log(sections, navlinks, ">>");
+        sections.forEach((sec) => {
+			let top = window.scrollY;
+            let offset = sec.offsetTop -150;
+            let height = sec.offsetHeight;
+            let id = sec.getAttribute('id')
+
+			if (top >= offset && top < offset + height) {
+				navlinks.forEach(link => {
+					link.classList.remove("active-section");
+                });
+				
+                // Add the "active" class to the corresponding navigation link.
+                document.querySelector(`.header nav a[href="#${id}"]`).classList.add("active-section");
+            }
+        })
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll",handleScrollActiveDiv )
+
+        return () => {
+            window.removeEventListener("scroll", handleScrollActiveDiv)
+        }
+    }, [])
 
 	return (
 		<>

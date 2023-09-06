@@ -1,5 +1,6 @@
-import React from 'react'
-import "./style.css"
+import React, { useEffect, useRef } from 'react'
+import "./style.css";
+import ScrollReveal from 'scrollreveal';
 
 const DATA = [
 	{
@@ -20,6 +21,26 @@ const DATA = [
 ]
 
 const Services = () => {
+	const isMountRef = useRef(true);
+	useEffect(() =>{
+        if (isMountRef.current) {
+            ScrollReveal().reveal('.heading', {
+                reset: true,
+                origin: 'top',   // Animation origin (e.g., 'top', 'bottom', 'left', 'right')
+                distance: '80px', // Distance from the origin
+                duration: 1000,   // Animation duration in milliseconds
+                delay: 200,       // Delay before animation starts in milliseconds
+            });
+
+			ScrollReveal().reveal('.services-content', {
+                reset: true,
+                origin: 'bottom',   // Animation origin (e.g., 'top', 'bottom', 'left', 'right')
+                distance: '80px', // Distance from the origin
+                duration: 1000,   // Animation duration in milliseconds
+                delay: 200,       // Delay before animation starts in milliseconds
+            });
+        }
+    }, [])
 	return (
 		<>
 			<section className='services' id="services">
@@ -38,18 +59,7 @@ const Services = () => {
 						</div>
 					))}
 					</div>
-					{/* <div className="services-box">
-						<i className="bx bx-code-alt"></i>
-						<h3>Web Developer</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptas ad sequi sint porro possimus nisi velit, repudiandae expedita explicabo?</p>
-						<a href="#" className='btn'>Read More</a>
-					</div>
-					<div className="services-box">
-						<i className="bx bx-code-alt"></i>
-						<h3>Web Developer</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptas ad sequi sint porro possimus nisi velit, repudiandae expedita explicabo?</p>
-						<a href="#" className='btn'>Read More</a>
-					</div> */}
+
 				</div>
 
 			</section>

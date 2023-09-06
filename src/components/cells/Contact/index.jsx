@@ -1,15 +1,35 @@
-import React from 'react'
-import "./style.css"
+import React, { useEffect, useRef } from 'react'
+import "./style.css";
+import ScrollReveal from 'scrollreveal';
 
 const Contact = () => {
+    const isMountRef = useRef(true);
+	useEffect(() =>{
+        if (isMountRef.current) {
+            ScrollReveal().reveal('.heading', {
+                reset: true,
+                origin: 'top',   // Animation origin (e.g., 'top', 'bottom', 'left', 'right')
+                distance: '80px', // Distance from the origin
+                duration: 1000,   // Animation duration in milliseconds
+                delay: 200,       // Delay before animation starts in milliseconds
+            });
 
+			ScrollReveal().reveal('.contact-container', {
+                reset: true,
+                origin: 'bottom',   // Animation origin (e.g., 'top', 'bottom', 'left', 'right')
+                distance: '80px', // Distance from the origin
+                duration: 1000,   // Animation duration in milliseconds
+                delay: 200,       // Delay before animation starts in milliseconds
+            });
+        }
+    }, [])
     return (
         <>
             <section className="contact" id="contact">
                 <h2 className='heading'> Contact <span>Me!</span></h2>
 
                 <form action="#">
-                    <div className="row">
+                    <div className="row contact-container">
                         <div className="col-md-6 mb-3 input-box form-groups">
                             <label htmlFor="fullname" className="form-label">
                                 Full Name
