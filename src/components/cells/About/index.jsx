@@ -16,7 +16,7 @@ const About = () => {
 			});
 
 			ScrollReveal().reveal('.profile-image', {
-				reset: false,
+				reset: true,
 				origin: 'bottom',   // Animation origin (e.g., 'top', 'bottom', 'left', 'right')
 				distance: '80px', // Distance from the origin
 				duration: 1000,   // Animation duration in milliseconds
