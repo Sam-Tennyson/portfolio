@@ -31,7 +31,7 @@ const DATA = [
 		id: "4",
 		image_data: IMAGES.arcade,
 		heading: "Arcade Challange",
-		desc: `"Paddle Bounce" , is a super fun game made with JavaScript. You control paddles on both sides of the screen to keep a ball bouncing. Your job is to stop the ball from falling down and earn points when it bounces.`,
+		desc: `"Arcade Challange Game" , is a super fun game made with JavaScript. You control paddles on both sides of the screen to keep a ball bouncing. Your job is to stop the ball from falling down and earn points when it bounces.`,
 		live_link: "https://sam-tennyson.github.io/ArcadeGame_javascript/"	
 	}, 
 ]

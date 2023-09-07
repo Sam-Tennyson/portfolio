@@ -3,13 +3,7 @@ import "./style.css"
 import { IMAGES } from '../../../shared/Images'
 import ScrollReveal from 'scrollreveal';
 import Typed from 'typed.js';
-
-const SOCIAL_LINKS = {
-    GITHUB: "https://github.com/Sam-Tennyson",
-    LINKED_IN: "https://linkedin.com/in/saurabh-shukla-457821196",
-    FACEBOOK: "https://www.facebook.com/people/Saurabh-Shukla/pfbid02iywkBrnX9naGztkNYTQ9H5gQFLRmThR9ncW4pjEcmzjeBur18G5dZnoZoyGNsxUDl/",
-    INSTAGRAM: "https://www.instagram.com/100rbh6488/",
-}
+import { SOCIAL_LINKS } from '../../../shared/Constants';
 
 const Section = () => {
 
@@ -72,8 +66,8 @@ const Section = () => {
                 <div className="social-media">
                     <a href={SOCIAL_LINKS.GITHUB} ><i className='bx bxl-github'></i></a>
                     <a href={SOCIAL_LINKS.LINKED_IN}><i className='bx bxl-linkedin'></i></a>
-                    <a href={SOCIAL_LINKS.INSTAGRAM}><i className='bx bxl-instagram-alt'></i></a>
-                    <a href={SOCIAL_LINKS.FACEBOOK}><i className='bx bxl-facebook'></i></a>
+                    <a href={"mailto:saurabhshukla3107@gmail.com"}><i className='bx bxl-gmail'></i></a>
+                
                 </div>
             </div>
             <div className="profile-image">

@@ -35,8 +35,6 @@ const About = () => {
 
 					<p>
 						I'm a versatile developer with a passion for creating user-friendly websites and applications. My expertise spans both frontend and full-stack development, allowing me to craft end-to-end solutions that meet the needs of users and businesses alike. </p>
-					{/* <p>
-						My skill set includes HTML, CSS, JavaScript, React.js, Firebase, Node.js, Git, and GitHub, enabling me to build responsive and seamless frontend experiences. Additionally, I have hands-on experience in full-stack development, encompassing both frontend and backend technologies.</p> */}
 
 					<p>
 						As a working professional, I'm committed to continuous learning and staying up-to-date with the latest technologies to deliver cutting-edge solutions. Whether I'm working on the frontend or diving into backend development, my goal is to create innovative and functional digital experiences that exceed expectations.</p>

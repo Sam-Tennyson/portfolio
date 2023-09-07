@@ -1,5 +1,6 @@
 .contact {
     background: var(--secondary-bg-color);
+    min-height: 0;
 }
 
 .contact h2 {

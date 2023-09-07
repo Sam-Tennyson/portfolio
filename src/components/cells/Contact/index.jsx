@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import "./style.css";
 import ScrollReveal from 'scrollreveal';
+import { SOCIAL_LINKS } from '../../../shared/Constants';
+import Footer from '../Footer';
 
 const Contact = () => {
     const isMountRef = useRef(true);
@@ -27,73 +29,17 @@ const Contact = () => {
         <>
             <section className="contact" id="contact">
                 <h2 className='heading'> Contact <span>Me!</span></h2>
+                <h1 className='text-center'>Get in touch</h1>
+                
 
-                <form action="#">
-                    <div className="row contact-container">
-                        <div className="col-md-6 mb-3 input-box form-groups">
-                            <label htmlFor="fullname" className="form-label">
-                                Full Name
-                            </label>
-                            <input
-                                type="text"
-                                className='form-control'
-                                placeholder='Full Name'
-                                name="fullname"
-                                id="fullname"
-                            />
-                        </div>
-                        <div className="col-md-6 mb-3 form-groups">
-                            <label htmlFor="email" className="form-label">
-                                Email address</label>
-                            <input
-                                type="text"
-                                className='form-control'
-                                placeholder='Email '
-                                name="email"
-                                id="email" 
-                            />
-                        </div>
-                        <div className="col-md-6  mb-3 input-box form-groups">
-                            <label htmlFor="email" className="form-label">
-                                Phone Number</label>
-                            <input
-                                type="text"
-                                className='form-control' placeholder='Phone number'
-                                name="number" id="number" 
-                            />
-                        </div>
-                        <div className="col-md-6  mb-3">
-                            <label htmlFor="email" className="form-label">
-                                Email Subject</label>
-                            <input type="text"
-                                className='form-control'
-                                placeholder='Email Subject'
-                                name=""
-                                id="" 
-                            />
-                        </div>
-
-                        <div className="col-md-12 mb-3">
-                            <label htmlFor="email" className="form-label">
-                                Phone Number</label>
-                            <textarea
-                                rows={"7"}
-                                type="text"
-                                className='form-control'
-                                placeholder='Email Subject' name="" id="" 
-                            />
-                        </div>
-                        <div className="text-center">
-                            <input type='submit' className='btn' 
-                            value={"  Send Message"}
-                            />
-                              
-
-                            {/* </input> */}
-                        </div>
-                    </div>
-                </form>
+                <div className="social-media text-center">
+                    <a href={SOCIAL_LINKS.GITHUB} ><i className='bx bxl-github'></i></a>
+                    <a href={SOCIAL_LINKS.LINKED_IN}><i className='bx bxl-linkedin'></i></a>
+                    <a href={"mailto:saurabhshukla3107@gmail.com"}><i className='bx bxl-gmail'></i></a>
+                </div>
             </section>
+            {/* <Footer /> */}
+
         </>
     )
 }
