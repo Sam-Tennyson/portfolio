@@ -18,14 +18,14 @@ const DATA = [
 		image_data: IMAGES.movie_browser,
 		heading: "Movie Browser",
 		desc: "This project is a result of my passion for movies and web development. I've harnessed the power of The Movie Database (TMDb) API to create a dynamic and user-friendly platform for exploring movies, TV shows, and more.",
-		live_link: "https://fascinating-druid-dd46de.netlify.app/"
+		live_link: "https://upcoming-movies-browser.netlify.app/"
 	},
 	{
 		id: "3",
 		image_data: IMAGES.profChat,
 		heading: "Gossip Chat",
 		desc: `"Gossip Chat project", a powerful communication platform designed to connect users in a seamless and efficient manner. Built with Firebase and React, this project offers secure user authentication, real-time messaging capabilities, and easy profile management.`,
-		live_link: "https://inspiring-crepe-f750fc.netlify.app/"
+		live_link: "https://gossip-chats.netlify.app/login"
 	}, 
 	{
 		id: "4",
