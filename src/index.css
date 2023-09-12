@@ -138,9 +138,15 @@ a {
 }
 
 .profile-image img{
-	width: 35vw;
-	animation: moveimage 4s ease-in-out infinite;
-	filter: drop-shadow(2px 4px 6px black);
+    width: 25vw;
+    /* animation: moveimage 4s ease-in-out infinite; */
+    /* filter: drop-shadow(3px 3px 0px var(--white-color)); */
+    height: 45rem;
+    object-fit: cover;
+    object-position: top;
+	/* border: 2px solid var(--main-color); */
+	border-radius: 8px;
+	/* background: var(--secondary-bg-color); */
 }
 
 @keyframes moveimage {
