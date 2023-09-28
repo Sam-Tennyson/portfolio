@@ -131,7 +131,7 @@ textarea {
 
 section {
 	min-height: 100vh;
-	padding: 10rem 9% 2rem;
+	padding: 5rem 3% 2rem;
 }
 
 
@@ -149,7 +149,7 @@ a {
 } */
 
 .profile-image img{
-    width: 25vw;
+    width: 40vw;
     /* animation: moveimage 4s ease-in-out infinite; */
     /* filter: drop-shadow(3px 3px 0px var(--white-color)); */
     height: 45rem;
@@ -207,7 +207,7 @@ a {
 		padding: 2rem 3%;
 	}
 	section {
-		padding: 10rem 3% 2rem;
+		padding: 5rem 3% 2rem;
 	}
 	footer {
 		padding: 2rem 3%;
@@ -224,9 +224,11 @@ a {
 	}
 }
 
+
+
 @media (max-width: 768px) {
 
-	#hamburger-icon {
+	/* #hamburger-icon {
 		display: block;
 	}
 	
@@ -252,7 +254,7 @@ a {
 
 	.my-nav a:last-child{
 		margin: 0;
-	}
+	} */
 
 	.home {
 		flex-direction: column;

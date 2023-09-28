@@ -7,6 +7,7 @@ import Services from './components/cells/Services';
 import Portfolio from './components/cells/Portfolio';
 import Contact from './components/cells/Contact';
 import Footer from './components/cells/Footer';
+import PublicLayout from './components/layout/PublicLayout';
 
 function App() {
 	
@@ -43,12 +44,15 @@ function App() {
 	return (
 		<>
 			<Header />
-			<Section />
-			<About />
-			{/* <Services /> */}
-			<Portfolio />
-			<Contact />
-			<Footer />
+			<PublicLayout>
+
+				<Section />
+				<About />
+				{/* <Services /> */}
+				<Portfolio />
+				<Contact />
+				<Footer />
+			</PublicLayout>
 			{/* <div>
 				{items.map((item, index) => (
 					<motion.div

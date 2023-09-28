@@ -52,7 +52,7 @@ const Header = () => {
 
     return (
         <>
-            <header className='header d-flex justify-content-between align-items-center'>
+            <header className='header '>
                 <a href="#" className='my-logo '>Portfolio</a>
                 {isOpen ? (
                     <i className='bx bx-x' id="hamburger-icon"
@@ -63,7 +63,7 @@ const Header = () => {
                         onClick={handleToggle}
                     ></i>
                 )}
-                <nav className={`navbar my-nav ${!isOpen ? "d-none" : ""} `}>
+                <nav className={`navbar my-nav  `}>
                     {TAB_DATA.map((item) => (
                         <a href={item?.id} key={item?.id}
                             onClick={handleToggle}
@@ -72,7 +72,7 @@ const Header = () => {
                             <i className="d-flex justify-content-center align-items-center">
 
                             {item?.icon} &nbsp;
-                            {item?.label}
+                            <span >{item?.label}</span>
                             </i>
                         </a>
                     ))}

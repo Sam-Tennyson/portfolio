@@ -2,8 +2,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 2rem 9%;
+    bottom: 0;
+    width: 20%;
+    padding: 2rem 5%;
     background: var(--secondary-bg-color);
     z-index: 100;
 }
@@ -22,15 +23,12 @@
 }
 
 .my-nav a {
-    margin: 0 2rem;
+    display: block;
+    width: 100%;
+    margin: 2rem;
     font-size: 1.7rem;
     color: var(--text-color);
     transition: 0.5s;
-}
-
-.my-nav a:last-child {
-    margin-left: 2rem;
-    margin-right: 0;
 }
 
 .my-nav .active-section {
@@ -38,4 +36,11 @@
     color: var(--text-color);
     border-bottom: 2px solid var(--text-color);
 }
+
+@media (max-width: 452px) {
+    .my-nav a i span {
+        display: none;
+    }
+}
+
 
