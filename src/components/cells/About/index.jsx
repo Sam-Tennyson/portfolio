@@ -28,7 +28,7 @@ const About = () => {
 		<>
 			<section className='about d-flex justify-content-center align-items-center' id="about">
 				<div className="profile-image">
-					<img src={IMAGES.portfolio_user_image} alt="text_image" />
+					<img src={IMAGES.PPP} alt="text_image" />
 				</div>
 				<div className="about-content">
 					<h2 className='heading'>About <span>Me</span></h2>

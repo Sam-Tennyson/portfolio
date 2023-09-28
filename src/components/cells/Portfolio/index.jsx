@@ -13,13 +13,27 @@ const DATA = [
 	// 	desc: "Designed and developed my personal portfolio website from scratch, showcasing my skills and projects. Ensured it's responsive and SEO-friendly.",
 	// 	live_link: "https://gleaming-daffodil-9889f1.netlify.app/"
 	// },
+	// {
+	// 	id: "2",
+	// 	image_data: IMAGES.movie_browser,
+	// 	heading: "Movie Browser",
+	// 	desc: "This project is a result of my passion for movies and web development. I've harnessed the power of The Movie Database (TMDb) API to create a dynamic and user-friendly platform for exploring movies, TV shows, and more.",
+	// 	live_link: "https://upcoming-movies-browser.netlify.app/"
+	// },
 	{
-		id: "2",
-		image_data: IMAGES.movie_browser,
-		heading: "Movie Browser",
-		desc: "This project is a result of my passion for movies and web development. I've harnessed the power of The Movie Database (TMDb) API to create a dynamic and user-friendly platform for exploring movies, TV shows, and more.",
-		live_link: "https://upcoming-movies-browser.netlify.app/"
-	},
+		id: "5",
+		image_data: IMAGES.budgetPage,
+		heading: "Easy Budget Tracker",
+		desc: `Easy Budget Tracker is a web app built using React.js, Node.js, MongoDB, and Chart.js. It offers user registration and login features, an interactive landing page graph, and essential functions to add, edit, delete, and list expenses. This tool simplifies personal finance management for users seeking better financial control.`,
+		live_link: "https://easy-budget-tracker.netlify.app/"
+	}, 
+	{
+		id: "6",
+		image_data: IMAGES.shoppingWebsite,
+		heading: "Shopping Website",
+		desc: `The Shopping Website is a React.js-based online shopping platform with user authentication (Login/Register). It utilizes Mirage.js for simulated data and integrates Razorpay for payment (in test mode). The website offers convenient filters for sorting products by price (Low to High, High to Low) and name (A to Z, Z to A), and also categorizes items into Laptop, TV, Smartwatch, Earphone, and Mobile for easy browsing.`,
+		live_link: "https://best-shopping-website.netlify.app/"
+	}, 
 	{
 		id: "3",
 		image_data: IMAGES.profChat,

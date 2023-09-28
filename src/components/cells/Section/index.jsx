@@ -71,7 +71,7 @@ const Section = () => {
                 </div>
             </div>
             <div className="profile-image">
-                <img src={IMAGES.portfolio_user_image} alt="text_image" />
+                <img src={IMAGES.PPP} alt="text_image" />
             </div>
         </section>
     </>
