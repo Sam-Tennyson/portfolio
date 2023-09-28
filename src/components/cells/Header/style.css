@@ -16,15 +16,15 @@
 }
 
 .my-logo {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     color: var(--text-color);
-    font-weight: 600;
+    font-weight: 800;
     cursor: default;
+    margin: 2rem;
+    text-decoration: underline;
 }
 
 .my-nav a {
-    display: block;
-    width: 100%;
     margin: 2rem;
     font-size: 1.7rem;
     color: var(--text-color);
@@ -34,7 +34,7 @@
 .my-nav .active-section {
     transition: width 0.2s ease; 
     color: var(--text-color);
-    border-bottom: 2px solid var(--text-color);
+    font-size: 2rem;
 }
 
 @media (max-width: 452px) {

@@ -52,8 +52,8 @@ const Header = () => {
 
     return (
         <>
-            <header className='header '>
-                <a href="#" className='my-logo '>Portfolio</a>
+            <header className='header d-flex flex-column align-items-center'>
+                <a href="#" className='my-logo '>Menu</a>
                 {isOpen ? (
                     <i className='bx bx-x' id="hamburger-icon"
                         onClick={handleToggle}
