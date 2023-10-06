@@ -7,16 +7,20 @@ const TAB_DATA = [
         label: "Home", id: "#home", icon: <i className='bx bxs-home'></i>
     },
     {
-        label: "About", id: "#about", icon: <i class='bx bxs-user'></i>
+        label: "About", id: "#about", icon: <i className='bx bxs-user'></i>
     },
     // {
     //     label: "Services", id: "#services", icon: <i className='bx bx-cog'></i>
     // },
     {
-        label: "Projects", id: "#portfolio", icon: <i className='bx bx-detail'></i>
+        label: "Toolbox", id: "#techStack", icon:<i className='bx bxs-box'></i>
+    },
+    
+    {
+        label: "Projects", id: "#portfolio", icon: <i className='bx bxs-detail'></i>
     },
     {
-        label: "Contact", id: "#contact", icon: <i className='bx bx-current-location'></i>
+        label: "Contact", id: "#contact", icon: <i className='bx bxs-contact' ></i>
     },
 ]
 

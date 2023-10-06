@@ -8,6 +8,7 @@ import Portfolio from './components/cells/Portfolio';
 import Contact from './components/cells/Contact';
 import Footer from './components/cells/Footer';
 import PublicLayout from './components/layout/PublicLayout';
+import TechStack from './components/cells/TechStack';
 
 function App() {
 	
@@ -49,6 +50,7 @@ function App() {
 				<Section />
 				<About />
 				{/* <Services /> */}
+				<TechStack />
 				<Portfolio />
 				<Contact />
 				<Footer />

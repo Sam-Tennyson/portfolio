@@ -1,0 +1,63 @@
+.techStack h2 {
+    margin-bottom: 4rem;
+}
+
+.techStack h2 span {
+    color: var(--main-color);
+}
+
+.tech-stack-class {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3rem;
+}
+
+.tech-stack-class div {
+    text-align: center;
+    width: 25%;
+    cursor: pointer;
+    border-radius: 18px;
+    padding: 3rem ;
+    /* margin: 3rem ; */
+}
+
+.tech-stack-class div span{
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.tech-stack-class div svg{
+    width: 7rem;
+    height: 7rem;
+}
+
+
+.tech-stack-class div:hover {
+    /* background: var(--secondary-bg-color); */
+    border: 2px solid #fff;
+    scale: 1.1;
+    box-shadow: 0 0 2px 2px #fff;
+}
+
+@media (max-width:768px){
+    .tech-stack-class div {
+        width: 33.33%;
+    }
+}
+
+@media (max-width:450px){
+    .tech-stack-class div {
+        width: 50%;
+    }
+}
+
+@media (max-width:365px){
+    .tech-stack-class div {
+        width: 100%;
+    }
+}
+
